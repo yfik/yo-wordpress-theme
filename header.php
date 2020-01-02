@@ -24,6 +24,31 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yo-theme' ); ?></a>
 
+<!-- dshgyufegsyug -->
+	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
+    <a class="navbar-brand" href="#">
+        <?php bloginfo('name'); ?>
+    </a>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'yo_theme' ); ?></button>
+	<?php
+            wp_nav_menu([
+            'menu'            => 'primary-menu',
+            'theme_location'  => 'menu-1',
+            'container'       => 'div',
+            'container_id'    => 'navbarCollapse',
+            'container_class' => 'collapse navbar-collapse',
+            'menu_id'         => false,
+            'menu_class'      => 'navbar-nav mr-auto',
+            'depth'           => 0,
+            'fallback_cb'     => 'functions::fallback',
+            'walker'          => new yo_theme_navbar()
+            ]);
+        ?>
+		</nav>
+		
+		</div>
+
+		<!-- ygyugu -->
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
