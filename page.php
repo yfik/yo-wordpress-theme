@@ -14,9 +14,9 @@
 
 get_header();
 ?>
-<div class="container">
+<div id="background">
   <div class="row">
-    <div class="col-sm-8">
+    <div id="yo_middle_content" class="col-sm-12">
 
 
 	<div id="primary" class="content-area">
@@ -40,9 +40,7 @@ get_header();
 	</div><!-- #primary -->
 
 	</div>
-    <div class="col-sm-4">
-    <?php get_sidebar(); ?>
-    </div>
+    
   </div>
 </div>
 <?php get_footer(); ?>

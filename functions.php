@@ -119,7 +119,8 @@ add_action( 'widgets_init', 'yo_theme_widgets_init' );
 function RadTheme_enqueue_styles() {
 
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
-    wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( "yo-style", get_template_directory_uri().'/css/yo-style.css', array(), '1.0', 'all' );
   
   }
   add_action( 'wp_enqueue_scripts', 'RadTheme_enqueue_styles');
@@ -133,7 +134,7 @@ function RadTheme_enqueue_styles() {
  * Enqueue scripts and styles.
  */
 function yo_theme_scripts() {
-	wp_enqueue_style( "yo-style", get_template_directory_uri().'/css/yo-style.css', array(), '1.0', 'all' );
+	
 	wp_enqueue_style( 'yo-theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'yo-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

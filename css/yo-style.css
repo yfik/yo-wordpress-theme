@@ -1,0 +1,39 @@
+#colophon{
+background-color: black;
+color: white;
+text-decoration-color: thistle;
+text-align: center;
+}
+.navbar-nav {
+    color: whitesmoke;
+    text-align: right;
+}
+#yo_sidebar{
+    margin-top: 200px;
+    align-content: center;
+    padding-left: 100px;
+    vertical-align: auto;
+}
+#yo_content{
+    background-color: white;
+    margin-top: 50px;
+}
+#yo_sidebar{
+    background-color: white;
+    margin-top: 50px;
+    padding-left: 50px;
+    height:max-content;
+}
+#separator{
+    background-color: yellow;
+}
+#background{
+    background-color: gray;
+}
+#site-navigation{
+    background-color: black;
+    color: black;
+}
+#menn{
+    color: whitesmoke;
+}
