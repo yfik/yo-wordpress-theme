@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yo-theme' ); ?></a>
 
 <!-- dshgyufegsyug -->
-	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
+	<nav id="site-navigation"  class="navbar navbar-expand navbar-light  bg-light">
     <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <?php bloginfo('name'); ?>
     </a>
