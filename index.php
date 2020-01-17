@@ -13,7 +13,6 @@
  */
 get_header();
 ?>
-<div id="background">
 <div class="container">
   <div class="row">
     <div id="yo_content" class="col-sm-7">
@@ -64,6 +63,5 @@ get_header();
     <?php get_sidebar(); ?>
     </div>
   </div>
-</div>
       </div>
 <?php get_footer(); ?>
