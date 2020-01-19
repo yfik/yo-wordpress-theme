@@ -60,7 +60,9 @@ get_header();
 
     </div>
     <div id="yo_sidebar" class="col-sm-4">
+    <div id="side"></div>
     <?php get_sidebar(); ?>
+    
     </div>
   </div>
       </div>
