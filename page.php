@@ -14,7 +14,6 @@
 
 get_header();
 ?>
-<div id="background">
   <div class="row">
     <div id="yo_middle_content" class="col-sm-12">
 
@@ -42,5 +41,5 @@ get_header();
 	</div>
     
   </div>
-</div>
+
 <?php get_footer(); ?>
