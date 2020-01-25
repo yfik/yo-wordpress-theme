@@ -1,5 +1,5 @@
 #colophon{
-background-color: black;
+background-color: gray;
 color: white;
 text-decoration-color: thistle;
 text-align: center;
@@ -30,10 +30,6 @@ text-align: center;
 }
 
 
-#site-navigation{
-    background-color: black;
-    color: black;
-}
 
 
 #menu-menu-1{
@@ -51,6 +47,7 @@ text-align: center;
 
 #site-navigation{
     box-shadow: 0px 1px 6px gray;
+ 
     
 }
 #yo_content{
@@ -136,12 +133,7 @@ text-align: center;
     font-size: 17px;
     text-align: center;
 }
-.comment-form-comment,
-.comment-form-author,
-.comment-form-url,
-.comment-form-email{
-     
-}
+
 .nav-link:hover{
     color: yellow;
 }
