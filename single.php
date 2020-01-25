@@ -36,7 +36,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	</div>
-    <div id="yo-sidebar" class="col-sm-4">
+    <div id="yo_sidebar" class="col-sm-4">
     <?php get_sidebar(); ?>
     </div>
   </div>

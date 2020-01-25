@@ -12,30 +12,22 @@
 ?>
 
 	</div><!-- #content -->
-	<nav id="site-navigation"  class="navbar navbar-expand-md navbar-dark top bg-dark">
-    <a class="navbar-brand" href="#">
-        <?php bloginfo('name'); ?>
-    </a>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'yo_theme' ); ?></button>
-	<?php
-            wp_nav_menu([
-            'menu'            => 'footer menu',
-            'theme_location'  => 'menu-1',
-            'container'       => 'div',
-            'container_id'    => 'navbarCollapse',
-            'container_class' => 'collapse navbar-collapse',
-            'menu_id'         => false,
-            'menu_class'      => 'navbar-nav mr-auto',
-            'depth'           => 0,
-            'fallback_cb'     => 'functions::fallback',
-            'walker'          => new yo_theme_navbar()
-            ]);
-        ?>
-		</nav>
-		
+	
 		</div>
 
 	<footer id="colophon" class="site-footer">
+	<div class="row">
+		<div id= bottom nav class="col-sm-12">
+		<div id="yo2-sidebar" class="col-sm-4">
+    <?php get_sidebar(); ?>
+	</div>
+	<div id="yo2-sidebar" class="col-sm-4">
+	<?php get_archives(); ?>
+	<div id="yo2-sidebar" class="col-sm-4">
+    <?php get_categories(); ?>
+    </div>
+		</div>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'yo-theme' ) ); ?>">
 				<?php
