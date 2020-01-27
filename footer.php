@@ -12,22 +12,11 @@
 ?>
 
 	</div><!-- #content -->
-	
+
+		
 		</div>
 
 	<footer id="colophon" class="site-footer">
-	<div class="row">
-		<div id= bottom nav class="col-sm-12">
-		<div id="yo2-sidebar" class="col-sm-4">
-    <?php get_sidebar(); ?>
-	</div>
-	<div id="yo2-sidebar" class="col-sm-4">
-	<?php get_archives(); ?>
-	<div id="yo2-sidebar" class="col-sm-4">
-    <?php get_categories(); ?>
-    </div>
-		</div>
-		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'yo-theme' ) ); ?>">
 				<?php
