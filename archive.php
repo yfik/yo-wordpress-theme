@@ -50,16 +50,9 @@ get_header();
 	</div><!-- #primary -->
 	<div id="yo_sidebar" class="col-sm-4">
     <?php get_sidebar(); ?>
-    
-    </div>
-
-	<div class="container">
-  <div class="row">
-    <div id="footer_sidebar" class="col-sm-12">
-    <?php get_footer(); ?>
-    
     </div>
 	</div>
-	</div>
-
-
+    
+  </div>
+</div>
+<?php get_footer(); ?>
