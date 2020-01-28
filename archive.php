@@ -49,12 +49,17 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<div id="yo_sidebar" class="col-sm-4">
-    <div id="side"></div>
     <?php get_sidebar(); ?>
     
     </div>
 
-<?php
+	<div class="container">
+  <div class="row">
+    <div id="footer_sidebar" class="col-sm-12">
+    <?php get_footer(); ?>
+    
+    </div>
+	</div>
+	</div>
 
-get_footer();
 
