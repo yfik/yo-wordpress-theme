@@ -67,20 +67,20 @@ text-align: center;
 .widget ul li a:visited,
 .widget ul li a:active{
     text-decoration: none;
-    color:#2090DB
-
-;
+    color:#2090DB;
+}
+.widget ul li a:hover
+{
+    text-decoration: none;
+    color:lightskyblue;
 }
 #yo_sidebar form .search-submit {
-    background-color: #2090DB
-
-;
+    background-color: #2090DB;
     color: white;
-
-
-   
-    
-
+}
+#yo_sidebar form .search-submit:hover {
+    background-color:white;
+    color: #2090DB;
 }
 #yo_sidebar form .search-field {
     box-shadow: 0px 1px 6px gray;
@@ -174,11 +174,37 @@ text-align: center;
     margin: 50px 50px 50px 50px;
 }
 
-#footer-sidebar,.widget ul li a:link,
-.widget ul li a:visited,
-.widget ul li a:active{
+#footer-sidebar ul li a:link,
+#footer-sidebar ul li a:visited,
+#footer-sidebar ul li a:active{
     text-decoration: none;
     color:white;
 
 ;
+}
+#footer-sidebar ul li a:hover{
+    text-decoration: none;
+    color:#2090DB;
+
+;
+}
+.site-info{
+    text-align: center;
+}
+.site-info a:link,
+.site-info a:visited,
+.site-info a:active{
+    text-decoration: none;
+    color:white;
+
+;
+}
+#wp-calendar caption{
+    color: white;
+}
+.entry-footer .cat-links a{
+    color: black;
+}
+.container{
+    margin-bottom: 100px;
 }
