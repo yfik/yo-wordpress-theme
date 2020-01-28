@@ -4,14 +4,15 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="container">
+  <div class="row">
+    <div id="yo_content" class="col-sm-7">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -47,7 +48,11 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+	<div id="yo_sidebar" class="col-sm-4">
+    <?php get_sidebar(); ?>
+    </div>
+	</div>
+    
+  </div>
+</div>
+<?php get_footer(); ?>
