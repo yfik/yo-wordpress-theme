@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
 ?>
@@ -25,26 +25,24 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'yo-theme' ); ?></a>
 
 <!-- dshgyufegsyug -->
+
 	<nav id="site-navigation"  class="navbar navbar-expand navbar-light  bg-light">
-    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+	<?php the_custom_logo();?>
+	<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <?php bloginfo('name'); ?>
     </a>
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'yo_theme' ); ?></button>
-	
+    <button class="navbar-toggler navbar-toggler-icon navbar-toggler-right bg-light" type = "button" data-toggle="collapse" data-target="#bs4navbar" aria-controls = "bs4navbar" aria-expanded="false" aria-label="Toggle navigation"><?php esc_html_e( '', 'yo_fik' ); ?></button> 
 	<?php
-            wp_nav_menu([
-            'menu'            => 'primary-menu',
-            'theme_location'  => 'menu-1',
-            'container'       => 'div',
-            'container_id'    => 'navbarCollapse',
-            'container_class' => 'collapse navbar-collapse',
-            'menu_id'         => false,
-            'menu_class'      => 'navbar-nav mr-auto',
-            'depth'           => 0,
-            'fallback_cb'     => 'functions::fallback',
-            'walker'          => new yo_theme_navbar()
-            ]);
-        ?>
+    wp_nav_menu( array(
+      'theme_location'  => 'menu-1',
+      'menu_id'         => 'primary-menu',
+      'container'       => 'div',
+            'container_id'    => 'bs4navbar',
+      'container_class' => 'collapse navbar-collapse',
+      'menu_class'      => 'navbar-nav ml-auto',
+            'walker'          => new yo_fik_navbar()
+    ) );
+    ?>
 		</nav>
 		
 		</div>
