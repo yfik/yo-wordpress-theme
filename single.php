@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
 get_header();
@@ -36,7 +36,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	</div>
-    <div id="yo-sidebar" class="col-sm-4">
+    <div id="yo_sidebar" class="col-sm-4">
     <?php get_sidebar(); ?>
     </div>
   </div>
