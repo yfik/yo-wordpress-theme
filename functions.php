@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
-if ( ! function_exists( 'yo_theme_setup' ) ) :
+if ( ! function_exists( 'yo_fik_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'yo_theme_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function yo_theme_setup() {
+	function yo_fik_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -60,7 +60,7 @@ if ( ! function_exists( 'yo_theme_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'yo_theme_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'yo_fik_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -81,7 +81,7 @@ if ( ! function_exists( 'yo_theme_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'yo_theme_setup' );
+add_action( 'after_setup_theme', 'yo_fik_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -90,20 +90,20 @@ add_action( 'after_setup_theme', 'yo_theme_setup' );
  *
  * @global int $content_width
  */
-function yo_theme_content_width() {
+function yo_fik_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'yo_theme_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'yo_fik_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'yo_theme_content_width', 0 );
+add_action( 'after_setup_theme', 'yo_fik_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function yo_theme_widgets_init() {
+function yo_fik_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'yo-theme' ),
 		'id'            => 'sidebar-1',
@@ -113,8 +113,44 @@ function yo_theme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name' => 'Footer Sidebar 1',
+		'id' => 'footer-sidebar-1',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+		) );
+	  register_sidebar( array(
+		'name' => 'Footer Sidebar 2',
+		'id' => 'footer-sidebar-2',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+		) );
+	  register_sidebar( array(
+		'name' => 'Footer Sidebar 3',
+		'id' => 'footer-sidebar-3',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+		) );
+	  register_sidebar( array(
+		'name' => 'Footer Sidebar 4',
+		'id' => 'footer-sidebar-4',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="footer-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
-add_action( 'widgets_init', 'yo_theme_widgets_init' );
+add_action( 'widgets_init', 'yo_fik_widgets_init' );
 // Adding Bootstrap
 function RadTheme_enqueue_styles() {
 
@@ -133,7 +169,7 @@ function RadTheme_enqueue_styles() {
 /**
  * Enqueue scripts and styles.
  */
-function yo_theme_scripts() {
+function yo_fik_scripts() {
 	
 	wp_enqueue_style( 'yo-theme-style', get_stylesheet_uri() );
 
@@ -145,8 +181,8 @@ function yo_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'yo_theme_scripts' );
-class yo_theme_navbar extends Walker_Nav_Menu
+add_action( 'wp_enqueue_scripts', 'yo_fik_scripts' );
+class yo_fik_navbar extends Walker_Nav_Menu
 {
     public function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
@@ -238,6 +274,7 @@ class yo_theme_navbar extends Walker_Nav_Menu
     }
 }
 
+
 /**
  * Implement the Custom Header feature.
  */
@@ -264,4 +301,8 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+function yo_fik_add_editor_styles() {
+    add_editor_style( '/assets/css/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'yo_fik_add_editor_styles' );
 
