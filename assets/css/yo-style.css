@@ -1,5 +1,5 @@
 #colophon{
-background-color: black;
+background-color: gray;
 color: white;
 text-decoration-color: thistle;
 text-align: center;
@@ -30,27 +30,29 @@ text-align: center;
 }
 
 
-#site-navigation{
-    background-color: black;
-    color: black;
-}
+
 
 
 #menu-menu-1{
     margin-left: 1200px;
 }
 #site-navigation ul li a {
-    color: indigo;
+    color: #2090DB
+
+;
     
     
 }
 #site-navigation ul li a:hover {
-    color: indigo;
+    color:lightskyblue
+
+;
     
 }
 
 #site-navigation{
     box-shadow: 0px 1px 6px gray;
+ 
     
 }
 #yo_content{
@@ -65,16 +67,20 @@ text-align: center;
 .widget ul li a:visited,
 .widget ul li a:active{
     text-decoration: none;
-    color:indigo;
+    color:#2090DB;
+}
+.widget ul li a:hover
+{
+    text-decoration: none;
+    color:lightskyblue;
 }
 #yo_sidebar form .search-submit {
-    background-color: indigo;
+    background-color: #2090DB;
     color: white;
-
-
-   
-    
-
+}
+#yo_sidebar form .search-submit:hover {
+    background-color:white;
+    color: #2090DB;
 }
 #yo_sidebar form .search-field {
     box-shadow: 0px 1px 6px gray;
@@ -82,7 +88,9 @@ text-align: center;
 /* #yo_content .entry-header{
     color: white;
     padding:25px 0px 25px 0px;
-    background-color: indigo;
+    background-color: #2090DB
+
+;
     box-shadow: 0px 1px 6px gray;
 } */
 
@@ -95,12 +103,16 @@ text-align: center;
 
 }
 #yo_content .entry-title {
-    background-color: indigo;
+    background-color: #2090DB
+
+;
     padding:15px 0px 15px 15px;
     
 }
 .col-sm-8 .entry-title{
-    background-color: indigo;
+    background-color: #2090DB
+
+;
     padding:15px 0px 15px 15px; 
     color: white;
 }
@@ -108,14 +120,18 @@ text-align: center;
 #yo_content .entry-meta a:link,
 #yo_content .entry-meta a:visited,
 #yo_content .entry-meta a:active{
-    color: indigo;
+    color: #2090DB
+
+;
 }
 #comments{
     box-shadow: 0px 1px 6px gray;
     margin-bottom: 50px;
 } 
 #commentform input{
-    border: 1px solid indigo;   
+    border: 1px solid #2090DB
+
+;   
 }
 #commentform{
     padding: 50px;
@@ -124,32 +140,87 @@ text-align: center;
     text-align: center;
     color: white;
     padding:25px 0px 25px 0px;
-    background-color: indigo;
+    background-color: #2090DB
+
+;
     box-shadow: 0px 1px 6px gray;
 }
 #submit{
     color: white;
-    background-color: indigo;
+    background-color: #2090DB;
   
     width: 150px;
     height: 50px;
     font-size: 17px;
     text-align: center;
 }
-.comment-form-comment,
-.comment-form-author,
-.comment-form-url,
-.comment-form-email{
-     
+
+#submit:hover{
+    background-color: white;
+    color: #2090DB;
 }
 .nav-link:hover{
     color: yellow;
 }
 #side{
-    background-color: indigo;
+    background-color: #2090DB
+
+;
     width: inherit;
     height: 10px;
     margin-top: -100px;
     margin-bottom: 50px;
     margin-left: -25px;
+}
+#footer-sidebar{
+    margin: 50px 50px 50px 50px;
+}
+
+#footer-sidebar ul li a:link,
+#footer-sidebar ul li a:visited,
+#footer-sidebar ul li a:active{
+    text-decoration: none;
+    color:white;
+
+;
+}
+#footer-sidebar ul li a:hover{
+    text-decoration: none;
+    color:#2090DB;
+
+;
+}
+.site-info{
+    text-align: center;
+}
+.site-info a:link,
+.site-info a:visited,
+.site-info a:active{
+    text-decoration: none;
+    color:white;
+
+;
+}
+#wp-calendar caption{
+    color: white;
+}
+.entry-footer .cat-links a{
+    color: black;
+}
+.container{
+    margin-bottom: 100px;
+}
+.comments-title{
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.comment-metadata a:visited,
+.comment-metadata a:active,
+.comment-metadata a:link{
+    color:#2090DB;
+}
+.page-content .search-submit{
+    background-color:#2090DB ;
+    color:white;
 }

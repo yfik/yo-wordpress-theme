@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
 /*
@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$yo_theme_comment_count = get_comments_number();
-			if ( '1' === $yo_theme_comment_count ) {
+			$yo_fik_comment_count = get_comments_number();
+			if ( '1' === $yo_fik_comment_count ) {
 				printf(
 					/* translators: 1: title. */
 					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'yo-theme' ),
@@ -38,8 +38,8 @@ if ( post_password_required() ) {
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $yo_theme_comment_count, 'comments title', 'yo-theme' ) ),
-					number_format_i18n( $yo_theme_comment_count ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $yo_fik_comment_count, 'comments title', 'yo-theme' ) ),
+					number_format_i18n( $yo_fik_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}

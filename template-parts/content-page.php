@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package yo_theme
+ * @package yo_fik
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php yo_theme_post_thumbnail(); ?>
+	<?php yo_fik_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
